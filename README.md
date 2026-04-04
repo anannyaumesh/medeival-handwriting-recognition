@@ -1,4 +1,4 @@
-# Medieval Handwriting Recognition — ICDAR 2026 CMMHWR26
+# Medieval Handwriting Recognition: ICDAR 2026 CMMHWR26
 
 **Multi-architecture ensemble for medieval manuscript text recognition combining Vision Transformers, custom BPE tokenizers, and CNN+CTC models via ROVER character-level alignment.**
 
