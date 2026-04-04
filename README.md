@@ -50,8 +50,8 @@ The system ensembles three structurally different HTR architectures. The ensembl
     │  (RoBERTa)   │  │              │  │  NFD norm    │
     └──────┬───────┘  └──────┬───────┘  └──────┬───────┘
            │                 │                 │
-           └────────────────┬─────────────────-┘
-                            ▼
+           └─────────────────┬─────────────────┘
+                             ▼
     ┌──────────────────────────────────────────────────┐
     │          ROVER Character-Level Alignment         │
     │                                                  │
@@ -109,7 +109,7 @@ Each TrOCR model processes 3 versions of each line image (original + rotation + 
 ├── inference/
 │   ├── 04-tta-beam-speacing-inference   # TrOCR ensemble with test-time augmentation
 │   ├── 05-custom-bpe-inference.py       # Custom BPE model inference
-│   └── 06-catmus-inference              # CATMuS Kraken full-page inference
+│   └── 06-catmus-inference.py           # CATMuS Kraken full-page inference
 └── ensemble/
     └── 07-rover-ensemble.py             # Guarded ROVER character-level alignment
 
@@ -149,10 +149,10 @@ python inference/infer_custom_bpe.py --test_dir /path/to/test \
     --output predictions_bpe.json
 
 # Step 3: CATMuS Kraken
-python inference/run_catmus.py
+python inference/06-catmus-inference.py
 
 # Step 4: ROVER ensemble
-python ensemble/rover.py
+python ensemble/07-rover-ensemble.py
 ```
 
 ---
