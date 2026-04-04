@@ -161,7 +161,7 @@ python ensemble/07-rover-ensemble.py
 
 - **Competition**: [ICDAR 2026 CMMHWR26](https://cmmhwr26.inria.fr/)
 - **Conference**: ICDAR 2026, Vienna, Austria (Aug 30 - Sep 4, 2026)
-- **Training data**: 146K lines across 8 medieval Romance languages (French, Latin, Castilian, Italian, Catalan, Gallician, Navarrese, Venitian)
+- **Training data**: 151K lines across 8 medieval Romance languages (French, Latin, Castilian, Italian, Catalan, Gallician, Navarrese, Venitian)
 - **Evaluation**: Character Error Rate (CER) averaged across test languages
 - **17 participating teams**, 127 submissions on Task 1
 
