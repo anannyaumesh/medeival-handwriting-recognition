@@ -14,7 +14,7 @@ Built for the [ICDAR 2026 Competition on Multilingual Medieval Handwriting Recog
 | ---------- | ------------------------------------- | --------- | ----- |
 | **Task 1** | Multilingual (French, Latin, Spanish) | **9.09%** | 30.5% |
 | **Task 2** | Zero-shot transfer to Occitan         | **9.56%** | 35.8% |
-| **Task 3** | Cross-family transfer to Czech        | **27.2%** | 80.4% |
+| **Task 3** | Cross-family transfer                 | **27.2%** | 80.4% |
 
 **Task 1 per-language breakdown:**
 
@@ -88,7 +88,7 @@ Standard ROVER merges predictions character-by-character via edit-distance align
 
 **3. Cross-architecture ensemble for zero-shot transfer**
 
-For Task 3 (unknown language, later identified as medieval Czech), the CNN+CTC architecture (CATMuS Kraken) outperformed all Transformer models despite never seeing Czech during training, suggesting CTC-based models generalize better to unseen scripts than autoregressive decoders.
+For Task 3 (unknown language), the CNN+CTC architecture (CATMuS Kraken) outperformed all Transformer models despite never seeing the language during training, suggesting CTC-based models generalize better to unseen scripts than autoregressive decoders.
 
 **4. Test-Time Augmentation**
 
